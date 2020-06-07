@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="209dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="149dp"
+        android:background="@drawable/ovals"
+        android:text="Press To Record Audio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="209dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="139dp"
+        android:background="@drawable/ovals"
+        android:text="get qr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Patient ID"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button8" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="209dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="149dp"
+        android:background="@drawable/ovals"
+        android:text="enter detailsn in database"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="267dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginEnd="58dp"
+        android:ems="10"
+        android:background="@android:color/transparent"
+        android:hint="patient details"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="209dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="129dp"
+        android:layout_marginTop="20dp"
+
+        android:layout_marginEnd="129dp"
+        android:background="@drawable/ovals"
+        android:text="go to patient details"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="257dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="108dp"
+        android:ellipsize="marquee"
+        android:gravity="center_horizontal"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:maxLines="1"
+        android:scrollbars="vertical"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="WELCOME TO SMART PRESCRIPTION"
+        android:textColor="#E70855"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="EllipsizeMaxLines"/>
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="209dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/ovals"
+        android:text="PRESS TO STOP RECORDING"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+</android.support.constraint.ConstraintLayout>
